@@ -11,6 +11,11 @@ typedef struct _lista_nodo {
 } ListaNodo;
 
 typedef struct {
+    ListaNodo* head;
+    ListaNodo* tail;
+    int size;
+    int data_size;
+    void (*free_data)(void*);
 } Lista;
 
 
